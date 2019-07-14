@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Users_Tests', {
+    return queryInterface.createTable('User_Tests', {
       active:{
         allowNull: false,
         type: Sequelize.BOOLEAN,

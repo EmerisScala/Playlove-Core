@@ -5,18 +5,18 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
-      type: Sequelize.INTEGER(15).UNSIGNED
+      type: DataTypes.INTEGER(15).UNSIGNED
     },
     active: {
-      type: Sequelize.BOOLEAN
+      type: DataTypes.BOOLEAN
     },
     description: {
       allowNull: false,
-      type: Sequelize.STRING
+      type: DataTypes.STRING
     },
     active:{
       allowNull: false,
-      type: Sequelize.BOOLEAN,
+      type: DataTypes.BOOLEAN,
       defaultValue: true
     },
     timestamps : true

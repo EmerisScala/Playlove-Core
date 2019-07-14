@@ -5,14 +5,14 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
-      type: Sequelize.INTEGER(15).UNSIGNED
+      type: DataTypes.INTEGER(15).UNSIGNED
     },
     title: {
       allowNull: false,
-      type: Sequelize.STRING
+      type: DataTypes.STRING
     },
     active: {
-      type: Sequelize.BOOLEAN
+      type: DataTypes.BOOLEAN
     },
     timestamps: true
   }, {});
